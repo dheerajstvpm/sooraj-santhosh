@@ -7,7 +7,7 @@
     "build": "next build --turbopack",
     "start": "next start",
     "lint": "eslint",
-    "move": "mv out/* docs/",
+    "move": "rm -rf docs/* docs/.* && mv out/* docs/",
     "push": "git add . && git commit -m \"build files\" && git push",
     "github": "npm run build && npm run move && npm run push"
   },
