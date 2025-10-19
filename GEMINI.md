@@ -32,16 +32,6 @@ This project aims to create a static portfolio website for the professional sing
     ```
     This will start the Next.js development server, usually accessible at `http://localhost:3000`.
 
-### Building for Static Export
-1.  Generate the static build:
-    ```bash
-    pnpm build
-    ```
-    This will create an `out` directory containing the static HTML, CSS, and JavaScript files, ready for deployment. The `pnpm move` script then moves these files to the `docs` directory.
-
-### Deployment
-The static `docs` directory can be deployed to platforms like GitHub Pages. Specific configuration for GitHub Pages will be handled during the deployment phase.
-
 ## Development Conventions
 
 *   **Styling:** All styling will be implemented using Tailwind CSS.
