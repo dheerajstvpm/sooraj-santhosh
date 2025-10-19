@@ -36,61 +36,32 @@ Build a static portfolio website for Sooraj Santhosh, replicating the existing s
 ### Documentation (this feature)
 
 ```
-specs/[###-feature]/
+specs/005-static-portfolio-site/
 ├── plan.md              # This file (/speckit.plan command output)
 ├── research.md          # Phase 0 output (/speckit.plan command)
 ├── data-model.md        # Phase 1 output (/speckit.plan command)
 ├── quickstart.md        # Phase 1 output (/speckit.plan command)
-├── contracts/           # Phase 1 output (/speckit.plan command)
+├── contracts/           # Phase 1 output (N/A for this static site)
 └── tasks.md             # Phase 2 output (/speckit.tasks command - NOT created by /speckit.plan)
 ```
 
 ### Source Code (repository root)
-<!--
-  ACTION REQUIRED: Replace the placeholder tree below with the concrete layout
-  for this feature. Delete unused options and expand the chosen structure with
-  real paths (e.g., apps/admin, packages/something). The delivered plan must
-  not include Option labels.
--->
 
 ```
-# [REMOVE IF UNUSED] Option 1: Single project (DEFAULT)
 src/
-├── models/
-├── services/
-├── cli/
-└── lib/
+├── app/                 # Next.js App Router pages and layouts
+├── components/          # Reusable React components
+├── lib/                 # Utility functions and theme logic
+└── styles/              # Global styles (e.g., Tailwind CSS base)
+
+public/                  # Static assets (images, sitemap, etc.)
 
 tests/
-├── contract/
-├── integration/
-└── unit/
-
-# [REMOVE IF UNUSED] Option 2: Web application (when "frontend" + "backend" detected)
-backend/
-├── src/
-│   ├── models/
-│   ├── services/
-│   └── api/
-└── tests/
-
-frontend/
-├── src/
-│   ├── components/
-│   ├── pages/
-│   └── services/
-└── tests/
-
-# [REMOVE IF UNUSED] Option 3: Mobile + API (when "iOS/Android" detected)
-api/
-└── [same as backend above]
-
-ios/ or android/
-└── [platform-specific structure: feature modules, UI flows, platform tests]
+├── unit/                # Unit tests for components and utilities
+└── e2e/                 # End-to-end tests (if added later)
 ```
 
-**Structure Decision**: [Document the selected structure and reference the real
-directories captured above]
+**Structure Decision**: A single project structure is chosen, leveraging Next.js App Router conventions. The `src/` directory will contain application logic, components, and utilities. `public/` will host static assets. `tests/` will house unit and potential e2e tests.
 
 ## Complexity Tracking
 

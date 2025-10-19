@@ -87,11 +87,11 @@ As a website visitor, I want to switch between dark and light visual themes, so 
 
 ### Non-Functional Requirements
 
--   **NFR-001 (Visual Fidelity)**: The website MUST visually resemble `www.soorajsanthosh.com` as much as possible in terms of layout, color scheme, and typography.
--   **NFR-002 (Performance)**: The static website MUST load quickly and efficiently, aiming for a page load time under 3 seconds on a standard broadband connection.
--   **NFR-003 (Responsiveness)**: The website MUST be fully responsive and accessible on various devices (desktop, tablet, mobile) with varying screen sizes.
--   **NFR-004 (Accessibility)**: The website MUST adhere to WCAG 2.1 AA guidelines for basic accessibility, including proper semantic HTML, keyboard navigation, and sufficient color contrast.
--   **NFR-005 (SEO)**: The website MUST be optimized for search engines, including proper meta tags, descriptive URLs, and a sitemap.
+-   **NFR-001 (Visual Fidelity)**: The website MUST visually replicate the layout, color scheme, and typography of `www.soorajsanthosh.com` with high fidelity.
+-   **NFR-002 (Performance)**: The static website MUST achieve a page load time under 3 seconds on a standard broadband connection, and a Lighthouse Performance score of 90 or higher.
+-   **NFR-003 (Responsiveness)**: The website MUST be fully responsive, adapting its layout and content for optimal viewing and interaction across common device breakpoints (e.g., mobile, tablet, desktop).
+-   **NFR-004 (Accessibility)**: The website MUST adhere to WCAG 2.1 AA guidelines, ensuring proper semantic HTML, full keyboard navigability, and sufficient color contrast.
+-   **NFR-005 (SEO)**: The website MUST be optimized for search engines, including unique and descriptive meta titles and descriptions for each page, clean and readable URLs, and a generated sitemap.xml.
 
 ### Key Entities *(include if feature involves data)*
 
