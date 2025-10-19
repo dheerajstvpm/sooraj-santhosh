@@ -99,8 +99,9 @@
 
 - **NFR-001 (SEO)**: [Describe SEO considerations, e.g., "Page titles and meta descriptions must be customizable"]
 - **NFR-002 (Accessibility)**: [Describe accessibility considerations, e.g., "All images must have alt text"]
-- **NFR-003 (Performance)**: [Describe performance considerations, e.g., "Page load time must be under 2 seconds on a 3G connection"]
-- **NFR-004 (UX Consistency)**: [Describe UX consistency considerations, e.g., "Feature must use the existing design system components"]
+- **NFR-003 (Minimal Design)**: [Describe how the feature will adhere to a minimalist aesthetic]
+- **NFR-004 (User-Friendly Interface)**: [Describe how the interface will be intuitive and easy to use]
+- **NFR-005 (Performance)**: [Describe performance considerations, e.g., "Page load time must be under 2 seconds on a 3G connection"]
 
 ### Key Entities *(include if feature involves data)*
 
@@ -125,6 +126,7 @@
 
 - **SEO-First Content**: [Describe how this feature aligns with the SEO principle]
 - **A11y (Accessibility) Compliance**: [Describe how this feature aligns with the accessibility principle]
-- **Consistent User Experience**: [Describe how this feature aligns with the UX consistency principle]
+- **Minimal Design**: [Describe how this feature aligns with the minimal design principle]
+- **User-Friendly Interface**: [Describe how this feature aligns with the user-friendly interface principle]
 - **Performant by Default**: [Describe how this feature aligns with the performance principle]
 

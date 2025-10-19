@@ -162,8 +162,9 @@ Examples of foundational tasks (adjust based on your project):
 
 - [ ] TXXX [USX] SEO: Add meta tags and structured data.
 - [ ] TXXX [USX] Accessibility: Run accessibility audits and fix any issues.
+- [ ] TXXX [USX] Minimal Design: Review the design for unnecessary elements.
+- [ ] TXXX [USX] User-Friendly Interface: Conduct usability testing.
 - [ ] TXXX [USX] Performance: Optimize images and assets.
-- [ ] TXXX [USX] UX Consistency: Verify the feature against the design system.
 
 ---
 
