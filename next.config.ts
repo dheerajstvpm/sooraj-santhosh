@@ -6,7 +6,7 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true, // Disable default image optimization
   },
-  assetPrefix: isProd ? "/sooraj-santhosh/" : "",
+  assetPrefix: isProd ? "/sooraj-santhosh" : "",
   basePath: isProd ? "/sooraj-santhosh" : "",
   output: "export",
   /* config options here */
