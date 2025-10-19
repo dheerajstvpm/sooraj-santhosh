@@ -9,7 +9,7 @@
     "lint": "eslint",
     "move": "mv out/* ../docs/",
     "push": "git add . && git commit -m \"build files\" && git push",
-    "github": "npm run build && npm run move && npm run push"
+    "github": "pnpm run build && pnpm run move && pnpm run push"
   },
   "dependencies": {
     "react": "19.1.0",
