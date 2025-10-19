@@ -9,7 +9,7 @@
     "lint": "eslint",
     "move": "rm -rf docs/* docs/.* && mv out/* docs/",
     "push": "git add . && git commit -m \"build files\" && git push",
-    "github": "NODE_ENV=production npm run build && npm run move && npm run push"
+    "github": "NODE_ENV=production pnpm run build && pnpm run move && pnpm run push"
   },
   "dependencies": {
     "next": "15.5.6",
