@@ -1,0 +1,36 @@
+# Gitignore for Next.js, TypeScript, pnpm
+
+# Dependencies
+node_modules/
+.pnpm-store/
+
+# Next.js build output
+.next/
+out/
+
+# Production build
+build/
+dist/
+
+# Logs
+*.log
+
+# Env files
+.env
+.env.local
+.env.development.local
+.env.production.local
+
+# pnpm-lock.yaml (if not committed)
+# pnpm-lock.yaml
+
+# Editor directories and files
+.vscode/
+.idea/
+*.suo
+*.user
+*.bak
+
+# OS generated files
+.DS_Store
+thumbs.db
