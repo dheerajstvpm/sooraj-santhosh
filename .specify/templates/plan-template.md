@@ -31,7 +31,10 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- **SEO-First Content:** Has the content been created with SEO best practices in mind?
+- **A11y (Accessibility) Compliance:** Does the feature adhere to WCAG 2.1 AA standards?
+- **Consistent User Experience:** Does the feature maintain a consistent look and feel with the rest of the website?
+- **Performant by Default:** Is the feature optimized for performance, leveraging static site generation and minimizing bundle sizes?
 
 ## Project Structure
 

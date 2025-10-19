@@ -95,6 +95,13 @@
 - **FR-006**: System MUST authenticate users via [NEEDS CLARIFICATION: auth method not specified - email/password, SSO, OAuth?]
 - **FR-007**: System MUST retain user data for [NEEDS CLARIFICATION: retention period not specified]
 
+### Non-Functional Requirements
+
+- **NFR-001 (SEO)**: [Describe SEO considerations, e.g., "Page titles and meta descriptions must be customizable"]
+- **NFR-002 (Accessibility)**: [Describe accessibility considerations, e.g., "All images must have alt text"]
+- **NFR-003 (Performance)**: [Describe performance considerations, e.g., "Page load time must be under 2 seconds on a 3G connection"]
+- **NFR-004 (UX Consistency)**: [Describe UX consistency considerations, e.g., "Feature must use the existing design system components"]
+
 ### Key Entities *(include if feature involves data)*
 
 - **[Entity 1]**: [What it represents, key attributes without implementation]
@@ -113,4 +120,11 @@
 - **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
 - **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
 - **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+
+### Constitutional Alignment
+
+- **SEO-First Content**: [Describe how this feature aligns with the SEO principle]
+- **A11y (Accessibility) Compliance**: [Describe how this feature aligns with the accessibility principle]
+- **Consistent User Experience**: [Describe how this feature aligns with the UX consistency principle]
+- **Performant by Default**: [Describe how this feature aligns with the performance principle]
 

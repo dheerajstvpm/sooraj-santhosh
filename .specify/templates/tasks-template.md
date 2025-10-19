@@ -156,6 +156,17 @@ Examples of foundational tasks (adjust based on your project):
 
 ---
 
+## Phase N+1: Constitutional Alignment
+
+**Purpose**: Ensure the feature aligns with the project constitution.
+
+- [ ] TXXX [USX] SEO: Add meta tags and structured data.
+- [ ] TXXX [USX] Accessibility: Run accessibility audits and fix any issues.
+- [ ] TXXX [USX] Performance: Optimize images and assets.
+- [ ] TXXX [USX] UX Consistency: Verify the feature against the design system.
+
+---
+
 ## Dependencies & Execution Order
 
 ### Phase Dependencies
