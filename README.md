@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Project: Sooraj Santhosh Portfolio Website
 
-## Getting Started
+## Project Overview
 
-First, run the development server:
+This project aims to create a static portfolio website for the professional singer "Sooraj Santhosh". The website will replicate the content and functionality of the existing site, `www.soorajsanthosh.com`, while incorporating modern web development practices and specific enhancements.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+**Key Technologies:**
+*   **Framework:** Next.js (configured for static site generation/export)
+*   **Package Manager:** pnpm
+*   **Styling:** Tailwind CSS
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Core Features & Enhancements:**
+*   **Content Replication:** Copy maximum content (text, images, music, videos) from `www.soorajsanthosh.com`.
+*   **WhatsApp Chat Integration:** A chat bubble icon at the bottom right, linking to `https://api.whatsapp.com/send?phone=917736967999`.
+*   **Custom Contact Form:** On submission, the contact form will open the user's default email client with pre-filled content from the form and the "To" field set to `sslive@soorajsanthosh.com`.
+*   **Dark Mode Toggle:** A toggle button at the top right corner to switch between dark and light modes. The default mode will be based on the user's system preference.
+*   **Static Site Generation:** The application will be built as a static website, deployable on GitHub Pages.
+*   **Design Principles:** Emphasis on SEO, accessibility, minimal design, user-friendliness, and performance.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Building and Running
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Setup
+1.  Install dependencies:
+    ```bash
+    pnpm install
+    ```
 
-## Learn More
+### Development
+1.  Run the development server:
+    ```bash
+    pnpm dev
+    ```
+    This will start the Next.js development server, usually accessible at `http://localhost:3000`.
 
-To learn more about Next.js, take a look at the following resources:
+## Development Conventions
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+*   **Styling:** All styling will be implemented using Tailwind CSS.
+*   **Component-Based Architecture:** The UI will be built using reusable React components.
+*   **Static Site Compatibility:** All features and components must be compatible with Next.js static export. Dynamic server-side rendering or API routes will be avoided.
+*   **Accessibility (A11y):** Adherence to Web Content Accessibility Guidelines (WCAG) will be prioritized.
+*   **Search Engine Optimization (SEO):** Appropriate meta tags, semantic HTML, and other SEO best practices will be implemented.
+*   **Performance:** Focus on optimizing asset loading, image optimization, and efficient code to ensure a fast and responsive user experience.
