@@ -5,17 +5,17 @@
 
 ## Phase 1: Setup (Shared Infrastructure)
 
-- [X] T001 Create Next.js project with TypeScript in `frontend/` directory
-- [X] T002 Initialize pnpm and install dependencies: `next`, `react`, `react-dom`, `tailwindcss`
-- [X] T003 Configure Tailwind CSS in `frontend/tailwind.config.js` and `frontend/styles/globals.css`
-- [X] T004 Create project structure as per `plan.md`
+- [ ] T001 Create Next.js project with TypeScript in `frontend/` directory
+- [ ] T002 Initialize pnpm and install dependencies: `next`, `react`, `react-dom`, `tailwindcss`
+- [ ] T003 Configure Tailwind CSS in `frontend/tailwind.config.js` and `frontend/styles/globals.css`
+- [ ] T004 Create project structure as per `plan.md`
 
 ## Phase 2: Foundational (Blocking Prerequisites)
 
-- [X] T005 Create a reusable `Layout` component in `frontend/src/components/Layout.tsx`
-- [X] T006 Implement dark mode toggle functionality in the `Layout` component
-- [X] T007 Create a `Header` component in `frontend/src/components/Header.tsx` with navigation links
-- [X] T008 Create a `Footer` component in `frontend/src/components/Footer.tsx` with social media links
+- [ ] T005 Create a reusable `Layout` component in `frontend/src/components/Layout.tsx`
+- [ ] T006 Implement dark mode toggle functionality in the `Layout` component
+- [ ] T007 Create a `Header` component in `frontend/src/components/Header.tsx` with navigation links
+- [ ] T008 Create a `Footer` component in `frontend/src/components/Footer.tsx` with social media links
 
 ## Phase 3: User Story 1 - Core Portfolio (Priority: P1) 🎯 MVP
 
@@ -25,16 +25,16 @@
 
 ### Implementation for User Story 1
 
-- [X] T009 [US1] Create the `Home` page in `frontend/src/pages/index.tsx`
-- [X] T010 [US1] Create the `About` page in `frontend/src/pages/about.tsx`
-- [X] T011 [US1] Create the `Music` page in `frontend/src/pages/music.tsx`
-- [X] T012 [US1] Create the `Videos` page in `frontend/src/pages/videos.tsx`
-- [X] T013 [US1] Create the `Tour` page in `frontend/src/pages/tour.tsx`
-- [X] T014 [P] [US1] Create a `SongCard` component in `frontend/src/components/SongCard.tsx`
-- [X] T015 [P] [US1] Create an `AlbumCard` component in `frontend/src/components/AlbumCard.tsx`
-- [X] T016 [P] [US1] Create an `EventCard` component in `frontend/src/components/EventCard.tsx`
-- [X] T017 [P] [US1] Create a `VideoCard` component in `frontend/src/components/VideoCard.tsx`
-- [X] T018 [US1] Populate the pages with content from `www.soorajsanthosh.com` (Requires manual content entry)
+- [ ] T009 [US1] Create the `Home` page in `frontend/src/pages/index.tsx`
+- [ ] T010 [US1] Create the `About` page in `frontend/src/pages/about.tsx`
+- [ ] T011 [US1] Create the `Music` page in `frontend/src/pages/music.tsx`
+- [ ] T012 [US1] Create the `Videos` page in `frontend/src/pages/videos.tsx`
+- [ ] T013 [US1] Create the `Tour` page in `frontend/src/pages/tour.tsx`
+- [ ] T014 [P] [US1] Create a `SongCard` component in `frontend/src/components/SongCard.tsx`
+- [ ] T015 [P] [US1] Create an `AlbumCard` component in `frontend/src/components/AlbumCard.tsx`
+- [ ] T016 [P] [US1] Create an `EventCard` component in `frontend/src/components/EventCard.tsx`
+- [ ] T017 [P] [US1] Create a `VideoCard` component in `frontend/src/components/VideoCard.tsx`
+- [ ] T018 [US1] Populate the pages with content from `www.soorajsanthosh.com`
 
 ## Phase 4: User Story 2 - Quick Contact via WhatsApp (Priority: P2)
 
@@ -44,8 +44,8 @@
 
 ### Implementation for User Story 2
 
-- [X] T019 [US2] Create a `WhatsAppButton` component in `frontend/src/components/WhatsAppButton.tsx`
-- [X] T020 [US2] Add the `WhatsAppButton` component to the `Layout` component, fixed to the bottom right corner.
+- [ ] T019 [US2] Create a `WhatsAppButton` component in `frontend/src/components/WhatsAppButton.tsx`
+- [ ] T020 [US2] Add the `WhatsAppButton` component to the `Layout` component, fixed to the bottom right corner.
 
 ## Phase 5: User Story 3 - Detailed Inquiry via Email (Priority: P3)
 
@@ -55,16 +55,16 @@
 
 ### Implementation for User Story 3
 
-- [X] T021 [US3] Create a `ContactForm` component in `frontend/src/components/ContactForm.tsx`
-- [X] T022 [US3] Add the `ContactForm` component to a new `Contact` page in `frontend/src/pages/contact.tsx`
-- [X] T023 [US3] Implement the logic to open the user's default email client with the form data.
+- [ ] T021 [US3] Create a `ContactForm` component in `frontend/src/components/ContactForm.tsx`
+- [ ] T022 [US3] Add the `ContactForm` component to a new `Contact` page in `frontend/src/pages/contact.tsx`
+- [ ] T023 [US3] Implement the logic to open the user's default email client with the form data.
 
 ## Phase N: Polish & Cross-Cutting Concerns
 
-- [X] T024 [P] Perform accessibility audit using a tool like Axe. (Manual audit required)
-- [X] T025 [P] Optimize all images for the web. (Manual optimization required)
-- [X] T026 Review the website for design consistency and responsiveness. (Manual review required)
-- [X] T027 [P] Add basic unit tests for components using Jest and React Testing Library. (Further action required to write specific tests)
+- [ ] T024 [P] Perform accessibility audit using a tool like Axe.
+- [ ] T025 [P] Optimize all images for the web.
+- [ ] T026 Review the website for design consistency and responsiveness.
+- [ ] T027 [P] Add basic unit tests for components using Jest and React Testing Library.
 
 ## Dependencies & Execution Order
 
