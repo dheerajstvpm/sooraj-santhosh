@@ -1,16 +1,37 @@
 ---
-const pageTitle: string = "Welcome to Astro";
+import Layout from '../layouts/Layout.astro';
+
+const sliderImages = [
+  '/images/slider/1.jpg',
+  '/images/slider/2.jpg',
+  '/images/slider/3.jpg',
+  '/images/slider/4.jpg',
+];
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{pageTitle}</title>
-	</head>
-	<body>
-		<h1>{pageTitle}</h1>
-	</body>
-</html>
+<Layout title="Sooraj Santhosh - Official Website">
+  <div class="relative w-full h-96 overflow-hidden">
+    {sliderImages.map((image, index) => (
+      <img
+        src={image}
+        alt={`Slider Image ${index + 1}`}
+        class="absolute w-full h-full object-cover transition-opacity duration-1000 ease-in-out"
+        style={{ animation: `fade-in-out ${sliderImages.length * 4}s infinite ${index * 4}s` }}
+      />
+    ))}
+  </div>
+
+  <style>
+    @keyframes fade-in-out {
+      0%,
+      25%,
+      100% {
+        opacity: 0;
+      }
+      5%,
+      20% {
+        opacity: 1;
+      }
+    }
+  </style>
+</Layout>
