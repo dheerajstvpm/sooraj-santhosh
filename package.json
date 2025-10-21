@@ -6,11 +6,7 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro",
-    "move": "mv dist/* docs/",
-    "404": "cp docs/index.html docs/404.html",
-    "push": "git add . && git commit -m \"build files\" && git push",
-    "github": "pnpm run build && pnpm run move && pnpm run 404 && pnpm run push"
+    "astro": "astro"
   },
   "dependencies": {
     "astro": "^5.14.7"
