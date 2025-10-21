@@ -6,7 +6,10 @@
     "dev": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "move": "mv dist/* docs/",
+    "push": "git add . && git commit -m \"build files\" && git push",
+    "github": "npm run build && npm run 404 && npm run push"
   },
   "dependencies": {
     "astro": "^5.14.7"
