@@ -22,11 +22,20 @@ import Layout from '../layouts/Layout.astro';
     </form>
   </div>
   <script>
-    document.getElementById('contact-form').addEventListener('submit', function(event) {
+    document.getElementById('contact-form')?.addEventListener('submit', function(event) {
       event.preventDefault();
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const message = document.getElementById('message').value;
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const messageInput = document.getElementById('message');
+
+      if (!(nameInput instanceof HTMLInputElement) || !(emailInput instanceof HTMLInputElement) || !(messageInput instanceof HTMLTextAreaElement)) {
+        console.error("Form elements not found or are not of the expected type.");
+        return;
+      }
+
+      const name = nameInput.value;
+      const email = emailInput.value;
+      const message = messageInput.value;
       const subject = 'Contact Form Submission from ' + name;
       const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
       const mailtoLink = `mailto:sslive@soorajsanthosh.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
