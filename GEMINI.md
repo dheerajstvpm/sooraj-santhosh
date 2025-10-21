@@ -40,3 +40,7 @@ This project aims to create a static portfolio website for the professional sing
 *   **Accessibility (A11y):** Adherence to Web Content Accessibility Guidelines (WCAG) will be prioritized.
 *   **Search Engine Optimization (SEO):** Appropriate meta tags, semantic HTML, and other SEO best practices will be implemented.
 *   **Performance:** Focus on optimizing asset loading, image optimization, and efficient code to ensure a fast and responsive user experience.
+
+## Deployment
+
+The project is deployed to GitHub Pages using a GitHub Actions workflow defined in `.github/workflows/deploy.yml`. This workflow is triggered on pushes to the `main` branch and automates the build and deployment process of the Next.js application.
