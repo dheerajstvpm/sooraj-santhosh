@@ -1,3 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
 @custom-variant dark (&:where(.dark, .dark *));
+/* styles/globals.css */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* or 100vh for viewport height */
+  width: 100%; /* or 100vw for viewport width */
+  overflow-x: hidden; /* Prevent horizontal scrollbar if needed */
+}

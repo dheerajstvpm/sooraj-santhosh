@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import { DarkModeToggle } from "./DarkModeToggle";
 
 export function Navbar() {
   const [mounted, setMounted] = useState(false);
@@ -66,32 +67,68 @@ export function Navbar() {
             className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
           >
             <li>
-              <Link href="/" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+              <Link
+                href="/"
+                onClick={() =>
+                  document.activeElement &&
+                  (document.activeElement as HTMLElement).blur()
+                }
+              >
                 Home
               </Link>
             </li>
             <li>
-              <Link href="/profile" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+              <Link
+                href="/profile"
+                onClick={() =>
+                  document.activeElement &&
+                  (document.activeElement as HTMLElement).blur()
+                }
+              >
                 Profile
               </Link>
             </li>
             <li>
-              <Link href="/music" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+              <Link
+                href="/music"
+                onClick={() =>
+                  document.activeElement &&
+                  (document.activeElement as HTMLElement).blur()
+                }
+              >
                 Music
               </Link>
             </li>
             <li>
-              <Link href="/gallery" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+              <Link
+                href="/gallery"
+                onClick={() =>
+                  document.activeElement &&
+                  (document.activeElement as HTMLElement).blur()
+                }
+              >
                 Gallery
               </Link>
             </li>
             <li>
-              <Link href="/videos" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+              <Link
+                href="/videos"
+                onClick={() =>
+                  document.activeElement &&
+                  (document.activeElement as HTMLElement).blur()
+                }
+              >
                 Videos
               </Link>
             </li>
             <li>
-              <Link href="/contact" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+              <Link
+                href="/contact"
+                onClick={() =>
+                  document.activeElement &&
+                  (document.activeElement as HTMLElement).blur()
+                }
+              >
                 Contact
               </Link>
             </li>
