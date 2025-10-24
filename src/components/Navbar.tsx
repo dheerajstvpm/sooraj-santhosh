@@ -42,9 +42,11 @@ export function Navbar() {
           <li>
             <Link href="/contact">Contact</Link>
           </li>
+          <li></li>
         </ul>
       </div>
       <div className="navbar-end">
+        <DarkModeToggle></DarkModeToggle>
         <div className="dropdown dropdown-end">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
             <svg

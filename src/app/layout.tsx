@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
-import { DarkModeToggle } from "@/components/DarkModeToggle";
 import { WhatsAppChatBubble } from "@/components/WhatsAppChatBubble";
 import { Navbar } from "@/components/Navbar";
 
@@ -39,7 +38,6 @@ export default function RootLayout({
         >
           <Navbar />
           {children}
-          <DarkModeToggle />
           <WhatsAppChatBubble />
         </ThemeProvider>
       </body>
