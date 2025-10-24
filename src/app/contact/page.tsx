@@ -9,7 +9,9 @@ export default function ContactPage() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -18,7 +20,9 @@ export default function ContactPage() {
     e.preventDefault();
 
     const { name, subject, message } = formData;
-    const mailtoLink = `mailto:sslive@soorajsanthosh.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}
+    const mailtoLink = `mailto:sslive@soorajsanthosh.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(`Name: ${name}
 
 ${message}`)}`;
 
@@ -30,7 +34,7 @@ ${message}`)}`;
       <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="name" className="block text-sm font-medium">
             Name
           </label>
           <input
@@ -39,12 +43,12 @@ ${message}`)}`;
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="mt-1 block w-full rounded-md border shadow-smfocus:border-indigo-500 focus:ring-indigo-500"
             required
           />
         </div>
         <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="subject" className="block text-sm font-medium">
             Subject
           </label>
           <input
@@ -53,12 +57,12 @@ ${message}`)}`;
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="mt-1 block w-full rounded-md border shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             required
           />
         </div>
         <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
+          <label htmlFor="message" className="block text-sm font-medium">
             Message
           </label>
           <textarea
@@ -67,7 +71,7 @@ ${message}`)}`;
             rows={5}
             value={formData.message}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="mt-1 block w-full rounded-md border shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
             required
           ></textarea>
         </div>
