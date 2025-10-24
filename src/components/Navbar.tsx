@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 export function Navbar() {
   const [mounted, setMounted] = useState(false);
 
-  // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
   }, []);
@@ -16,65 +15,89 @@ export function Navbar() {
   }
 
   return (
-    <nav className="bg-gray-100 dark:bg-zinc-900 p-4 shadow-md">
-      <div className="mx-auto flex justify-between items-center">
-        <Link
-          href="/"
-          className="text-2xl font-bold text-gray-800 dark:text-white"
-        >
+    <div className="navbar bg-base-100">
+      <div className="navbar-start">
+        <Link href="/" className="btn btn-ghost text-xl">
           Sooraj Santhosh
         </Link>
-        <ul className="flex space-x-4 pr-12">
+      </div>
+      <div className="navbar-center hidden lg:flex">
+        <ul className="menu menu-horizontal px-1">
           <li>
-            <Link
-              href="/"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-            >
-              Home
-            </Link>
+            <Link href="/">Home</Link>
           </li>
           <li>
-            <Link
-              href="/profile"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-            >
-              Profile
-            </Link>
+            <Link href="/profile">Profile</Link>
           </li>
           <li>
-            <Link
-              href="/music"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-            >
-              Music
-            </Link>
+            <Link href="/music">Music</Link>
           </li>
           <li>
-            <Link
-              href="/gallery"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-            >
-              Gallery
-            </Link>
+            <Link href="/gallery">Gallery</Link>
           </li>
           <li>
-            <Link
-              href="/videos"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-            >
-              Videos
-            </Link>
+            <Link href="/videos">Videos</Link>
           </li>
           <li>
-            <Link
-              href="/contact"
-              className="text-gray-700 dark:text-gray-300 hover:text-blue-500 dark:hover:text-blue-400"
-            >
-              Contact
-            </Link>
+            <Link href="/contact">Contact</Link>
           </li>
         </ul>
       </div>
-    </nav>
+      <div className="navbar-end">
+        <div className="dropdown dropdown-end">
+          <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-5 w-5"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M4 6h16M4 12h8m-8 6h16"
+              />
+            </svg>
+          </div>
+          <ul
+            tabIndex={0}
+            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+          >
+            <li>
+              <Link href="/" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+                Home
+              </Link>
+            </li>
+            <li>
+              <Link href="/profile" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+                Profile
+              </Link>
+            </li>
+            <li>
+              <Link href="/music" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+                Music
+              </Link>
+            </li>
+            <li>
+              <Link href="/gallery" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+                Gallery
+              </Link>
+            </li>
+            <li>
+              <Link href="/videos" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+                Videos
+              </Link>
+            </li>
+            <li>
+              <Link href="/contact" onClick={() => document.activeElement && (document.activeElement as HTMLElement).blur()}>
+                Contact
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
   );
 }
