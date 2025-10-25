@@ -6,14 +6,14 @@ export function Footer() {
   return (
     <footer className="footer sm:footer-horizontal bg-base-100 text-base-content p-4 flex justify-between pe-20">
       <aside>
-        <p>Copyright © {new Date().getFullYear()}</p>
+        <a target="_blank" href="https://github.com/dheerajstvpm">Copyright © {new Date().getFullYear()}</a>
       </aside>
       <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
         <a target="_blank" href="https://www.instagram.com/soorajsanthoshlive/">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="24"
+            height="24"
             fill="currentColor"
             className="bi bi-instagram"
             viewBox="0 0 16 16"
@@ -27,8 +27,8 @@ export function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="28"
+            height="28"
             fill="currentColor"
             className="bi bi-youtube"
             viewBox="0 0 16 16"
@@ -42,8 +42,8 @@ export function Footer() {
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
+            width="24"
+            height="24"
             fill="currentColor"
             className="bi bi-facebook"
             viewBox="0 0 16 16"
