@@ -33,9 +33,9 @@ ${message}`)}`;
     <div className="container mx-auto p-4">
       <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium">
-            Name
+        <div className="form-control">
+          <label htmlFor="name" className="label">
+            <span className="label-text">Name</span>
           </label>
           <input
             type="text"
@@ -43,13 +43,13 @@ ${message}`)}`;
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+            className="input input-bordered w-full"
             required
           />
         </div>
-        <div>
-          <label htmlFor="subject" className="block text-sm font-medium">
-            Subject
+        <div className="form-control">
+          <label htmlFor="subject" className="label">
+            <span className="label-text">Subject</span>
           </label>
           <input
             type="text"
@@ -57,13 +57,13 @@ ${message}`)}`;
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+            className="input input-bordered w-full"
             required
           />
         </div>
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium">
-            Message
+        <div className="form-control">
+          <label htmlFor="message" className="label">
+            <span className="label-text">Message</span>
           </label>
           <textarea
             id="message"
@@ -71,13 +71,13 @@ ${message}`)}`;
             rows={5}
             value={formData.message}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border shadow-sm focus:border-indigo-500 focus:ring-indigo-500"
+            className="textarea textarea-bordered h-24 w-full"
             required
           ></textarea>
         </div>
         <button
           type="submit"
-          className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="btn btn-primary w-full"
         >
           Submit
         </button>

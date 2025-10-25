@@ -37,7 +37,10 @@ export function DarkModeToggle() {
         type="checkbox"
         value="synthwave"
         className="toggle theme-controller"
-        checked={mounted && theme === "dark"}
+        checked={
+          mounted &&
+          (theme === "dark" || (theme === "system" && systemTheme === "dark"))
+        }
         onChange={toggleTheme}
       />
       <svg
