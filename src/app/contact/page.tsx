@@ -77,7 +77,7 @@ ${message}`)}`;
         </div>
         <button
           type="submit"
-          className="btn btn-outline w-full"
+          className="btn btn-outline w-full rounded-md"
         >
           Submit
         </button>
