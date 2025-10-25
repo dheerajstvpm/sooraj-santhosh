@@ -9,7 +9,9 @@ export default function ContactPage() {
     message: "",
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({ ...prevData, [name]: value }));
   };
@@ -18,7 +20,9 @@ export default function ContactPage() {
     e.preventDefault();
 
     const { name, subject, message } = formData;
-    const mailtoLink = `mailto:sslive@soorajsanthosh.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(`Name: ${name}
+    const mailtoLink = `mailto:sslive@soorajsanthosh.com?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(`Name: ${name}
 
 ${message}`)}`;
 
@@ -26,12 +30,12 @@ ${message}`)}`;
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 max-w-lg">
       <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
-        <div>
-          <label htmlFor="name" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-            Name
+        <div className="form-control">
+          <label htmlFor="name" className="label">
+            <span className="label-text">Name</span>
           </label>
           <input
             type="text"
@@ -39,13 +43,13 @@ ${message}`)}`;
             name="name"
             value={formData.name}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="input input-bordered w-full"
             required
           />
         </div>
-        <div>
-          <label htmlFor="subject" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-            Subject
+        <div className="form-control">
+          <label htmlFor="subject" className="label">
+            <span className="label-text">Subject</span>
           </label>
           <input
             type="text"
@@ -53,13 +57,13 @@ ${message}`)}`;
             name="subject"
             value={formData.subject}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="input input-bordered w-full"
             required
           />
         </div>
-        <div>
-          <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300">
-            Message
+        <div className="form-control">
+          <label htmlFor="message" className="label">
+            <span className="label-text">Message</span>
           </label>
           <textarea
             id="message"
@@ -67,13 +71,13 @@ ${message}`)}`;
             rows={5}
             value={formData.message}
             onChange={handleChange}
-            className="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-indigo-500 focus:ring-indigo-500 dark:bg-gray-700 dark:border-gray-600 dark:text-white"
+            className="textarea textarea-bordered h-24 w-full"
             required
           ></textarea>
         </div>
         <button
           type="submit"
-          className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500"
+          className="btn btn-outline w-full rounded-md"
         >
           Submit
         </button>

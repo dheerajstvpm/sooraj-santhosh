@@ -34,7 +34,7 @@ This project aims to create a static portfolio website for the professional sing
 
 ## Development Conventions
 
-*   **Styling:** All styling will be implemented using Tailwind CSS.
+*   **Styling:** All styling will be implemented using Tailwind CSS and follow mobile first design.
 *   **Component-Based Architecture:** The UI will be built using reusable React components.
 *   **Static Site Compatibility:** All features and components must be compatible with Next.js static export. Dynamic server-side rendering or API routes will be avoided.
 *   **Accessibility (A11y):** Adherence to Web Content Accessibility Guidelines (WCAG) will be prioritized.
