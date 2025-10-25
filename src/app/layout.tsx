@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import { WhatsAppChatBubble } from "@/components/WhatsAppChatBubble";
 import { Navbar } from "@/components/Navbar";
+import { Footer } from "@/components/Footer";
 
 const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
@@ -35,6 +36,7 @@ export default function RootLayout({
           <Navbar />
           {children}
           <WhatsAppChatBubble />
+          <Footer />
         </ThemeProvider>
       </body>
     </html>
