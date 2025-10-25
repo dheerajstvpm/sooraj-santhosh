@@ -30,7 +30,7 @@ ${message}`)}`;
   };
 
   return (
-    <div className="container mx-auto p-4">
+    <div className="container mx-auto p-4 max-w-lg">
       <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="form-control">
@@ -77,7 +77,7 @@ ${message}`)}`;
         </div>
         <button
           type="submit"
-          className="btn btn-primary w-full"
+          className="btn btn-outline w-full"
         >
           Submit
         </button>
