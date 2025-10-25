@@ -30,58 +30,98 @@ ${message}`)}`;
   };
 
   return (
-    <div className="container mx-auto p-4 max-w-lg">
-      <h1 className="text-3xl font-bold mb-6">Contact Me</h1>
-      <form onSubmit={handleSubmit} className="space-y-4">
-        <div className="form-control">
-          <label htmlFor="name" className="label">
-            <span className="label-text">Name</span>
-          </label>
-          <input
-            type="text"
-            id="name"
-            name="name"
-            value={formData.name}
-            onChange={handleChange}
-            className="input input-bordered w-full"
-            required
-          />
+    <div className="hero min-h-[calc(100vh-4rem)] bg-base-200">
+      <div className="hero-content text-center">
+        <div className="max-w-3xl flex flex-col gap-10">
+          <h1 className="text-5xl font-bold">Contact Me</h1>
+          <form onSubmit={handleSubmit} className="space-y-4">
+            {/* <div className="form-control">
+              <label htmlFor="name" className="label">
+                <span className="label-text">Name</span>
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                className="input input-bordered w-full"
+                required
+              />
+            </div> */}
+            <label htmlFor="name" className="floating-label form-control">
+              <span>Name</span>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                placeholder="Name"
+                className="input input-md"
+                required
+              />
+            </label>
+            {/* <div className="form-control">
+              <label htmlFor="subject" className="label">
+                <span className="label-text">Subject</span>
+              </label>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                className="input input-bordered w-full"
+                required
+              />
+            </div> */}
+            <label htmlFor="subject" className="floating-label form-control">
+              <span>Subject</span>
+              <input
+                type="text"
+                id="subject"
+                name="subject"
+                value={formData.subject}
+                onChange={handleChange}
+                placeholder="Subject"
+                className="input input-md"
+                required
+              />
+            </label>
+            {/* <div className="form-control">
+              <label htmlFor="message" className="label">
+                <span className="label-text">Message</span>
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                rows={5}
+                value={formData.message}
+                onChange={handleChange}
+                className="textarea textarea-bordered h-24 w-full"
+                required
+              ></textarea>
+            </div> */}
+            <label htmlFor="message" className="floating-label form-control">
+              <span>Message</span>
+              <textarea
+                id="message"
+                name="message"
+                rows={5}
+                value={formData.message}
+                onChange={handleChange}
+                placeholder="Message"
+                className="textarea textarea-md"
+                required
+              />
+            </label>
+            <button type="submit" className="btn btn-outline w-full rounded-md">
+              Submit
+            </button>
+          </form>
         </div>
-        <div className="form-control">
-          <label htmlFor="subject" className="label">
-            <span className="label-text">Subject</span>
-          </label>
-          <input
-            type="text"
-            id="subject"
-            name="subject"
-            value={formData.subject}
-            onChange={handleChange}
-            className="input input-bordered w-full"
-            required
-          />
-        </div>
-        <div className="form-control">
-          <label htmlFor="message" className="label">
-            <span className="label-text">Message</span>
-          </label>
-          <textarea
-            id="message"
-            name="message"
-            rows={5}
-            value={formData.message}
-            onChange={handleChange}
-            className="textarea textarea-bordered h-24 w-full"
-            required
-          ></textarea>
-        </div>
-        <button
-          type="submit"
-          className="btn btn-outline w-full rounded-md"
-        >
-          Submit
-        </button>
-      </form>
+      </div>
     </div>
   );
 }
