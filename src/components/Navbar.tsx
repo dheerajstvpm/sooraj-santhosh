@@ -28,9 +28,6 @@ export function Navbar() {
             <Link href="/">Home</Link>
           </li>
           <li>
-            <Link href="/profile">Profile</Link>
-          </li>
-          <li>
             <Link href="/music">Music</Link>
           </li>
           <li>
@@ -77,17 +74,6 @@ export function Navbar() {
                 }
               >
                 Home
-              </Link>
-            </li>
-            <li>
-              <Link
-                href="/profile"
-                onClick={() =>
-                  document.activeElement &&
-                  (document.activeElement as HTMLElement).blur()
-                }
-              >
-                Profile
               </Link>
             </li>
             <li>
