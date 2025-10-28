@@ -1,11 +1,16 @@
+import Image from "next/image";
+import profileImg from "@/public/profile/sooraj-santhosh.jpg";
+// bg-[url(/sooraj-santhosh/profile/sooraj-santhosh.jpg)] bg-auto bg-no-repeat
 export default function ProfilePage() {
   return (
-    <div className="hero min-h-[calc(100vh-4rem)] bg-base-200">
-      <div className="hero-content text-center">
-        <div className="max-w-md">
-          <p className="py-6">Content will be updated soon.</p>
-        </div>
-      </div>
+    <div className="flex-1 bg-base-200 text-center relative">
+      <Image
+        src={profileImg}
+        alt="Profile image"
+        className="w-full"
+        objectFit="cover"
+      />
+      <p className="absolute top-1/2 left-10">Content will be updated soon.</p>
     </div>
   );
 }

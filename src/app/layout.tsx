@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${ubuntu.variable} antialiased`}
+        className={`${ubuntu.variable} antialiased flex flex-col`}
       >
         <ThemeProvider
           attribute="data-theme"
