@@ -1,5 +1,5 @@
 import { Carousel, CarouselSlide } from "@mantine/carousel";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import image1 from "@/public/gallery/image1.jpg";
 import image2 from "@/public/gallery/image2.jpg";
 import image3 from "@/public/gallery/image3.jpg";
