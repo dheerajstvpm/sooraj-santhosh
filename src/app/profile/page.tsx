@@ -1,16 +1,27 @@
 import Image from "next/image";
 import profileImg from "@/public/profile/sooraj-santhosh.jpg";
-// bg-[url(/sooraj-santhosh/profile/sooraj-santhosh.jpg)] bg-auto bg-no-repeat
+
 export default function ProfilePage() {
   return (
-    <div className="flex-1 bg-base-200 text-center relative">
+    <div className="min-h-[calc(100vh-124px)] bg-base-200 text-center relative">
       <Image
         src={profileImg}
         alt="Profile image"
-        className="w-full"
-        objectFit="cover"
+        className="h-[calc(100vh-64px)] w-full object-cover"
+        priority
       />
-      <p className="absolute top-1/2 left-10">Content will be updated soon.</p>
+      <p className="absolute top-1/5 text-white text-justify w-96 ps-10 md:ps-20">
+        Sooraj Santhosh is an Indian singer, songwriter, and composer. He
+        straddles the worlds of independent music and playback singing, moving
+        smoothly between the two. Santhosh is the recipient of a Kerala State
+        Film Award, 2 Mirchi Music Awards, and a Kerala State Film Critics
+        Award. He has sung around 300 songs in 8 languages.Santhosh released his
+        independent solo EP, The Gypsy Sun, in 2020. It's a multi-genre,
+        multi-lingual album that consists of 5 songs. Santhosh was the lead
+        singer and has composed and performed with Masala Coffee until 2019,
+        when he decided to dedicate more time to his own creative endeavors. Now
+        he performs with his own band, Sooraj Santhosh Live.
+      </p>
     </div>
   );
 }

@@ -16,7 +16,7 @@ export function Navbar() {
   }
 
   return (
-    <div className="navbar bg-base-100">
+    <div className="fixed top-0 z-[1] navbar bg-base-100">
       <div className="navbar-start">
         <Link href="/" className="btn btn-ghost text-xl">
           Sooraj Santhosh
