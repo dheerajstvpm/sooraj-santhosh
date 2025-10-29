@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import profileImg from "@/public/profile/sooraj-santhosh.jpg";
 // bg-[url(/sooraj-santhosh/profile/sooraj-santhosh.jpg)] bg-auto bg-no-repeat
 export default function ProfilePage() {
@@ -8,8 +8,11 @@ export default function ProfilePage() {
         src={profileImg}
         alt="Profile image"
         className="w-full h-full"
-        objectFit="cover"
-      />
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          objectFit: "cover"
+        }} />
       <p className="absolute top-1/2 left-10">Content will be updated soon.</p>
     </div>
   );

@@ -1,5 +1,5 @@
 import { Carousel, CarouselSlide } from "@mantine/carousel";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import image1 from "@/public/gallery/image1.jpg";
 import image2 from "@/public/gallery/image2.jpg";
 import image3 from "@/public/gallery/image3.jpg";
@@ -106,22 +106,70 @@ export default function GalleryPage() {
         }}
       >
         <CarouselSlide className="flex items-center">
-          <Image src={image1} alt="Image 1" width={500} height={500} />
+          <Image
+            src={image1}
+            alt="Image 1"
+            width={500}
+            height={500}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </CarouselSlide>
         <CarouselSlide className="flex items-center">
-          <Image src={image2} alt="Image 2" width={500} height={500} />
+          <Image
+            src={image2}
+            alt="Image 2"
+            width={500}
+            height={500}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </CarouselSlide>
         <CarouselSlide className="flex items-center">
-          <Image src={image3} alt="Image 3" width={500} height={500} />
+          <Image
+            src={image3}
+            alt="Image 3"
+            width={500}
+            height={500}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </CarouselSlide>
         <CarouselSlide className="flex items-center">
-          <Image src={image4} alt="Image 4" width={500} height={500} />
+          <Image
+            src={image4}
+            alt="Image 4"
+            width={500}
+            height={500}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </CarouselSlide>
         <CarouselSlide className="flex items-center">
-          <Image src={image5} alt="Image 5" width={500} height={500} />
+          <Image
+            src={image5}
+            alt="Image 5"
+            width={500}
+            height={500}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </CarouselSlide>
         <CarouselSlide className="flex items-center">
-          <Image src={image6} alt="Image 6" width={500} height={500} />
+          <Image
+            src={image6}
+            alt="Image 6"
+            width={500}
+            height={500}
+            style={{
+              maxWidth: "100%",
+              height: "auto"
+            }} />
         </CarouselSlide>
       </Carousel>
     </div>
