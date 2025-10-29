@@ -30,7 +30,7 @@ ${message}`)}`;
   };
 
   return (
-    <div className="flex-1 bg-base-200 text-center flex justify-center py-10">
+    <div className="min-h-[calc(100vh-124px)] bg-base-200 text-center flex justify-center py-10">
       <div className="flex flex-col gap-10 justify-center items-stretch">
         <h1 className="text-5xl font-bold">Contact Me</h1>
         <form onSubmit={handleSubmit} className="space-y-4">

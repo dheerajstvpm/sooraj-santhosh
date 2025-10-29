@@ -14,7 +14,8 @@ const ubuntu = Ubuntu({
 
 export const metadata: Metadata = {
   title: "Sooraj Santhosh - Official Website",
-  description: "Official portfolio website of professional singer Sooraj Santhosh.",
+  description:
+    "Official portfolio website of professional singer Sooraj Santhosh.",
 };
 
 export default function RootLayout({
@@ -24,9 +25,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${ubuntu.variable} antialiased flex flex-col`}
-      >
+      <body className={`${ubuntu.variable} antialiased flex flex-col !pt-16`}>
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="system"

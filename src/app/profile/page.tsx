@@ -3,7 +3,7 @@ import profileImg from "@/public/profile/sooraj-santhosh.jpg";
 // bg-[url(/sooraj-santhosh/profile/sooraj-santhosh.jpg)] bg-auto bg-no-repeat
 export default function ProfilePage() {
   return (
-    <div className="flex-1 bg-base-200 text-center relative">
+    <div className="min-h-[calc(100vh-124px)] bg-base-200 text-center relative">
       <Image
         src={profileImg}
         alt="Profile image"

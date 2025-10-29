@@ -4,7 +4,7 @@ import * as React from "react";
 
 export function Footer() {
   return (
-    <footer className="footer sm:footer-horizontal bg-base-100 text-base-content p-4 flex justify-between pe-20">
+    <footer className="footer sm:footer-horizontal bg-base-100 text-base-content p-4 flex justify-between pe-20 z-[1]">
       <aside>
         <a target="_blank" href="https://github.com/dheerajstvpm">Copyright © {new Date().getFullYear()}</a>
       </aside>
