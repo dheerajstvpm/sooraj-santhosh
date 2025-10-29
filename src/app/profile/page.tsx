@@ -1,6 +1,6 @@
 import Image from "next/image";
 import profileImg from "@/public/profile/sooraj-santhosh.jpg";
-// bg-[url(/sooraj-santhosh/profile/sooraj-santhosh.jpg)] bg-auto bg-no-repeat
+
 export default function ProfilePage() {
   return (
     <div className="min-h-[calc(100vh-124px)] bg-base-200 text-center relative">
@@ -10,7 +10,13 @@ export default function ProfilePage() {
         className="h-[calc(100vh-64px)] w-full object-cover"
         priority
       />
-      <p className="absolute top-1/2 left-10">Content will be updated soon.</p>
+      <p className="absolute top-2/5 text-justify w-96 ps-10">
+        Sooraj Santhosh is an Indian singer, songwriter, and composer. He
+        straddles the worlds of independent music and playback singing, moving
+        smoothly between the two. Santhosh is the recipient of a Kerala State
+        Film Award, 2 Mirchi Music Awards, and a Kerala State Film Critics
+        Award.
+      </p>
     </div>
   );
 }
