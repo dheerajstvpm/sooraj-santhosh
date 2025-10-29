@@ -7,7 +7,7 @@ export default function ProfilePage() {
       <Image
         src={profileImg}
         alt="Profile image"
-        className="w-full"
+        className="w-full h-full"
         objectFit="cover"
       />
       <p className="absolute top-1/2 left-10">Content will be updated soon.</p>
