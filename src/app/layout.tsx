@@ -5,6 +5,14 @@ import { ThemeProvider } from "@/components/ThemeProvider";
 import { WhatsAppChatBubble } from "@/components/WhatsAppChatBubble";
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
+import "@mantine/core/styles.css";
+// ‼️ import carousel styles after core package styles
+import "@mantine/carousel/styles.css";
+import {
+  ColorSchemeScript,
+  MantineProvider,
+  mantineHtmlProps,
+} from "@mantine/core";
 
 const ubuntu = Ubuntu({
   weight: ["300", "400", "500", "700"],
@@ -14,7 +22,8 @@ const ubuntu = Ubuntu({
 
 export const metadata: Metadata = {
   title: "Sooraj Santhosh - Official Website",
-  description: "Official portfolio website of professional singer Sooraj Santhosh.",
+  description:
+    "Official portfolio website of professional singer Sooraj Santhosh.",
 };
 
 export default function RootLayout({
@@ -23,20 +32,23 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body
-        className={`${ubuntu.variable} antialiased flex flex-col`}
-      >
+    <html lang="en" {...mantineHtmlProps} suppressHydrationWarning>
+      <head>
+        <ColorSchemeScript />
+      </head>
+      <body className={`${ubuntu.variable} antialiased flex flex-col`}>
         <ThemeProvider
           attribute="data-theme"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
         >
-          <Navbar />
-          {children}
-          <WhatsAppChatBubble />
-          <Footer />
+          <MantineProvider>
+            <Navbar />
+            {children}
+            <WhatsAppChatBubble />
+            <Footer />
+          </MantineProvider>
         </ThemeProvider>
       </body>
     </html>
