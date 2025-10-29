@@ -1,4 +1,4 @@
-import Image from "next/legacy/image";
+import Image from "next/image";
 import profileImg from "@/public/profile/sooraj-santhosh.jpg";
 // bg-[url(/sooraj-santhosh/profile/sooraj-santhosh.jpg)] bg-auto bg-no-repeat
 export default function ProfilePage() {
