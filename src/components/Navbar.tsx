@@ -25,19 +25,19 @@ export function Navbar() {
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
           <li>
-            <Link href="/">Home</Link>
+            <Link href="#">Home</Link>
           </li>
           <li>
-            <Link href="/music">Music</Link>
+            <Link href="#music-page">Music</Link>
           </li>
           <li>
-            <Link href="/gallery">Gallery</Link>
+            <Link href="#gallery-page">Gallery</Link>
           </li>
           <li>
-            <Link href="/videos">Videos</Link>
+            <Link href="#videos-page">Videos</Link>
           </li>
           <li>
-            <Link href="/contact">Contact</Link>
+            <Link href="#contact-page">Contact</Link>
           </li>
           <li></li>
         </ul>
@@ -67,7 +67,7 @@ export function Navbar() {
           >
             <li>
               <Link
-                href="/"
+                href="#"
                 onClick={() =>
                   document.activeElement &&
                   (document.activeElement as HTMLElement).blur()
@@ -78,7 +78,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="/music"
+                href="#music-page"
                 onClick={() =>
                   document.activeElement &&
                   (document.activeElement as HTMLElement).blur()
@@ -89,7 +89,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="/gallery"
+                href="#gallery-page"
                 onClick={() =>
                   document.activeElement &&
                   (document.activeElement as HTMLElement).blur()
@@ -100,7 +100,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="/videos"
+                href="#videos-page"
                 onClick={() =>
                   document.activeElement &&
                   (document.activeElement as HTMLElement).blur()
@@ -111,7 +111,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="/contact"
+                href="#contact-page"
                 onClick={() =>
                   document.activeElement &&
                   (document.activeElement as HTMLElement).blur()
