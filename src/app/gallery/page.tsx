@@ -8,7 +8,7 @@ import image6 from "@/public/gallery/image6.jpg";
 
 export default function GalleryPage() {
   return (
-    <div className="min-h-[calc(100vh-124px)] bg-base-200 text-center flex items-center">
+    <div className="min-h-[calc(100dvh-124px)] bg-base-200 text-center flex items-center">
       <div className="carousel w-full h-[600]">
         <div
           id="slide1"
