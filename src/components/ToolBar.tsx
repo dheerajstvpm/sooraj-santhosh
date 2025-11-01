@@ -6,7 +6,7 @@ import { WhatsAppChatBubble } from "./WhatsAppChatBubble";
 
 export function ToolBar() {
   return (
-    <div className="fixed bottom-3 w-full flex justify-center items-center gap-1">
+    <div className="fixed bottom-4 w-full flex justify-center items-center gap-1">
       <div className="shadow-sm/50 h-11 rounded-full bg-base-100 flex justify-around items-center gap-5 px-4">
         <Link href="#">
           <svg
