@@ -20,7 +20,7 @@ export default function ContactPage() {
     e.preventDefault();
 
     const { name, subject, message } = formData;
-    const mailtoLink = `mailto:sslive@soorajsanthosh.com?subject=${encodeURIComponent(
+    const mailtoLink = `mailto:soorajsanthoshlive@gmail.com?subject=${encodeURIComponent(
       subject
     )}&body=${encodeURIComponent(`Name: ${name}
 
@@ -32,7 +32,7 @@ ${message}`)}`;
   return (
     <div
       id="contact-page"
-      className="h-lvh text-center flex flex-col items-center justify-center py-10"
+      className="text-center flex flex-col items-center justify-center py-48"
     >
       <div className="flex flex-col gap-10 justify-center items-stretch">
         <h1 className="text-5xl font-bold">Get in touch</h1>
