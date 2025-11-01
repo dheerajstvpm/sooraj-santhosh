@@ -32,7 +32,7 @@ ${message}`)}`;
   return (
     <div
       id="contact-page"
-      className="h-full text-center flex flex-col items-center justify-center py-10"
+      className="h-lvh text-center flex flex-col items-center justify-center py-10"
     >
       <div className="flex flex-col gap-10 justify-center items-stretch">
         <h1 className="text-5xl font-bold">Get in touch</h1>
