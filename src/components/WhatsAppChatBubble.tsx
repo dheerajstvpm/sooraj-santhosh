@@ -8,7 +8,7 @@ export function WhatsAppChatBubble() {
       href="https://api.whatsapp.com/send?phone=917736967999"
       target="_blank"
       rel="noopener noreferrer"
-      className="btn btn-circle fixed bottom-3 right-6 bg-green-500 text-white shadow-lg hover:bg-green-600 transition-colors z-[2]"
+      className="btn btn-circle border-0 bg-green-500 text-white shadow-md/50 hover:bg-green-600 transition-colors z-[2]"
     >
       <svg
         xmlns="http://www.w3.org/2000/svg"

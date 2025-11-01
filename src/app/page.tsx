@@ -8,9 +8,7 @@ export default function Home() {
   return (
     <>
       <ProfilePage />
-      <MusicPage />
       <GalleryPage />
-      <VideosPage />
       <ContactPage />
     </>
   );

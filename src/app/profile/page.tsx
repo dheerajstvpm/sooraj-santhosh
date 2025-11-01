@@ -3,7 +3,7 @@ import profileImg from "@/public/profile/sooraj-santhosh.jpg";
 
 export default function ProfilePage() {
   return (
-    <div id="profile-page" className="min-h-[calc(100dvh-64px)] bg-base-200 text-center relative scroll-mt-16">
+    <div id="profile-page" className="text-center relative">
       <Image
         src={profileImg}
         alt="Profile image"
