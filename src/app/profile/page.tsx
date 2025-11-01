@@ -3,25 +3,32 @@ import profileImg from "@/public/profile/sooraj-santhosh.jpg";
 
 export default function ProfilePage() {
   return (
-    <div id="profile-page" className="text-center relative">
+    <div
+      id="profile-page"
+      className="flex flex-col justify-center items-center p-10 md:p-20 gap-10"
+    >
+      <h1 className="text-5xl font-bold text-center">Sooraj Santhosh</h1>
       <Image
         src={profileImg}
         alt="Profile image"
-        className="h-[calc(100vh-64px)] w-full object-cover"
+        className="object-cover rounded-full"
         priority
       />
-      <div className="absolute top-0 h-[calc(100vh-64px)] w-full flex items-center md:w-1/2 px-10 md:ps-20">
+      <div className="w-full flex items-center">
         <p className="text-justify">
-          Sooraj Santhosh is an Indian singer, songwriter, and composer. He
-          straddles the worlds of independent music and playback singing, moving
-          smoothly between the two. Santhosh is the recipient of a Kerala State
-          Film Award, 2 Mirchi Music Awards, and a Kerala State Film Critics
-          Award. He has sung around 300 songs in 8 languages.Santhosh released
-          his independent solo EP, The Gypsy Sun, in 2020. It&apos;s a
-          multi-genre, multi-lingual album that consists of 5 songs. Santhosh
-          was the lead singer and has composed and performed with Masala Coffee
-          until 2019, when he decided to dedicate more time to his own creative
-          endeavors. Now he performs with his own band, Sooraj Santhosh Live.
+          Sooraj Santhosh is a singer, songwriter, and composer with decades of
+          experience performing in India and abroad. Known for his versatility,
+          his music blends Indian classic, ethnic sounds with contemporary and
+          global influences. The warm reception of &apos;The Gypsy Sun&apos;,
+          his independent multilingual album of five songs, reflects this
+          musical fluidity. Apart from being an independent artist with a
+          distinctive vision and sensibility, and a theatre musician who brings
+          layered auditory dimensions to performances, Sooraj is also a well
+          loved playback singer. He has worked with nearly all major composers
+          in the South Indian film industry, recording over 300 tracks, and
+          received the Kerala State Award for &apos;Best Playback Singer&apos;
+          in 2016. His music reaches over five million monthly listeners across
+          major streaming platforms
         </p>
       </div>
     </div>
