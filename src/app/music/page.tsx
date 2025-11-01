@@ -1,7 +1,6 @@
 export default function MusicPage() {
   return (
-    <div id="music-page" className="min-h-[calc(100dvh-64px)] w-full bg-base-200 text-center py-10 flex flex-col justify-center items-center scroll-mt-16">
-      <h1 className="text-5xl font-bold">Music</h1>
+    <div id="music-page" className="w-full text-center py-10 flex flex-col justify-center items-center">
       <p className="py-6">
         This is the Music page. Content will be updated soon.
       </p>

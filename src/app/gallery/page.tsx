@@ -10,7 +10,7 @@ export default function GalleryPage() {
   return (
     <div
       id="gallery-page"
-      className="carousel min-h-[calc(100dvh-64px)] bg-base-200 text-center flex items-center scroll-mt-16"
+      className="carousel text-center flex items-center"
     >
       <div
         id="slide1"
