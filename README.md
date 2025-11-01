@@ -12,7 +12,7 @@ This project aims to create a static portfolio website for the professional sing
 **Core Features & Enhancements:**
 *   **Content Replication:** Copy maximum content (text, images, music, videos) from `www.soorajsanthosh.com`.
 *   **WhatsApp Chat Integration:** A chat bubble icon at the bottom right, linking to `https://api.whatsapp.com/send?phone=917736967999`.
-*   **Custom Contact Form:** On submission, the contact form will open the user's default email client with pre-filled content from the form and the "To" field set to `sslive@soorajsanthosh.com`.
+*   **Custom Contact Form:** On submission, the contact form will open the user's default email client with pre-filled content from the form and the "To" field set to `soorajsanthoshlive@gmail.com`.
 *   **Dark Mode Toggle:** A toggle button at the top right corner to switch between dark and light modes. The default mode will be based on the user's system preference.
 *   **Static Site Generation:** The application will be built as a static website, deployable on GitHub Pages.
 *   **Design Principles:** Emphasis on SEO, accessibility, minimal design, user-friendliness, and performance.

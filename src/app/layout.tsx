@@ -14,7 +14,7 @@ const ubuntu = Ubuntu({
 export const metadata: Metadata = {
   title: "Sooraj Santhosh - Official Website",
   description:
-    "Official portfolio website of professional singer Sooraj Santhosh.",
+    "Explore his music, performances, and artistic journey as a singer, songwriter, and composer. Discover his independent albums, theatre projects, and extensive work as a playback singer.",
 };
 
 export default function RootLayout({
